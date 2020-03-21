@@ -11,7 +11,8 @@
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
-<th:block th:each="job : ${jobs}">
+
+    <th:block th:fragment="displayResults" th:each="job : ${jobs}">
     <table class="job-listing">
         <tr>
             <td>ID</td>
@@ -39,6 +40,7 @@
         </tr>
     </table>
 </th:block>
+
 </div>
 
 </body>

@@ -33,12 +33,12 @@
 
         <input type="submit" value="Search" />
     </form>
-
+</div>
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
-</div>
+    <th:block th:replace="list-jobs :: displayResults"></th:block>
 
 </body>
 </html>
